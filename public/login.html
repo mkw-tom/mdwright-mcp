@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8" />
+<title>ログイン</title>
+<h1>ログイン</h1>
+<form id="f">
+  <label for="email">メールアドレス</label>
+  <input id="email" type="email" />
+  <br/>
+  <label for="pw">パスワード</label>
+  <input id="pw" type="password" />
+  <br/>
+  <button type="submit">ログイン</button>
+</form>
+<div id="app"></div>
+<script>
+  document.getElementById('f').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const pw = document.getElementById('pw').value;
+    const ok = email === 'user@example.com' && pw === 'pass';
+    const app = document.getElementById('app');
+    app.innerHTML = ok
+      ? '<h2>ダッシュボード</h2>'
+      : '<p style="color:red">メールアドレスかパスワードが違います</p>';
+  });
+</script>
+</html>
