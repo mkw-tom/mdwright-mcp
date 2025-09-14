@@ -1,0 +1,32 @@
+{
+  "name": "mdright-mcp",
+  "version": "1.0.0",
+  "bin": {
+    "mdwright-mcp": "./bin/cli.js"
+  },
+  "scripts": {
+    "exec": "node scripts/md-exec.mjs",
+    "test:e2e": "npx playwright test",
+    "demo:serve": "npx http-server public -p 8080 -c-1",
+    "test:local": "APP_BASE=http://127.0.0.1:8080 node scripts/md-exec.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkw-tom/mdwright-mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mkw-tom/mdwright-mcp/issues"
+  },
+  "homepage": "https://github.com/mkw-tom/mdwright-mcp#readme",
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "@playwright/mcp": "^0.0.37",
+    "@playwright/test": "^1.55.0",
+    "http-server": "^14.1.1",
+    "playwright": "^1.55.0"
+  }
+}

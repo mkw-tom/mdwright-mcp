@@ -1,0 +1,46 @@
+{
+  "suite": "Login",
+  "file": "tests/md/Login.md",
+  "steps": [
+    {
+      "caseTitle": "正常ログイン",
+      "step": "/login に移動"
+    },
+    {
+      "caseTitle": "正常ログイン",
+      "step": "メールアドレス に user@example.com を入力"
+    },
+    {
+      "caseTitle": "正常ログイン",
+      "step": "パスワード に pass を入力"
+    },
+    {
+      "caseTitle": "正常ログイン",
+      "step": "ログイン をクリック"
+    },
+    {
+      "caseTitle": "正常ログイン",
+      "step": "ダッシュボード が見える"
+    },
+    {
+      "caseTitle": "パスワード誤りで失敗",
+      "step": "/login に移動"
+    },
+    {
+      "caseTitle": "パスワード誤りで失敗",
+      "step": "メールアドレス に user@example.com を入力"
+    },
+    {
+      "caseTitle": "パスワード誤りで失敗",
+      "step": "パスワード に wrongpass を入力"
+    },
+    {
+      "caseTitle": "パスワード誤りで失敗",
+      "step": "ログイン をクリック"
+    },
+    {
+      "caseTitle": "パスワード誤りで失敗",
+      "step": "メールアドレスかパスワードが違います が見える"
+    }
+  ]
+}
